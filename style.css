@@ -1,0 +1,129 @@
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --primary-color: #45ccb8;
+    --light-gray: #2b3032a1;
+    --border:#2b303218;
+    --text-color: #6c757d;
+    
+    --roboto: "Roboto" , sans-serif;
+     
+}
+ 
+ 
+.roboto{
+    font-family: var(--roboto);
+}
+.primary-color{
+    color : var(--primary-color);
+}
+
+.text-color{
+    color: var(--text-color);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.osawald{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+}
+
+.sofia{
+    font-family: 'Sofia', cursive;
+}
+
+/** Slider two**/
+      
+.site-btn.btn-span{
+    padding: 0.8rem 1.9rem;
+    border-radius: 4rem;
+    border: 1px solid var(--border);
+    background-color: white;
+   position: relative;
+   top: -19px;
+    color: var(--light-gray);
+    
+}
+.site-btn.btn-span:hover{
+    background-color: var(--text-color);
+    color: white;
+}
+
+/*  carasoul indiacators*/
+.carousel-control-prev,
+.carousel-control-next{
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    top: 50%;
+    opacity: 0.8;
+    
+    border-radius: 50px;
+    }
+    .carousel-control-next{
+       right: -1%;
+    }
+    .carousel-control-prev{
+       left: -1%;
+    }
+    /** Slider img**/
+    .slide-img{
+        height: 50vh;
+        width: 40vw;
+        border-radius: 12px;
+    }
+  
+    /* featured image*/
+    .feat-img{
+     height: 44vh;
+     border-radius: 6px;
+     transition: all 0.4s;
+    }
+    .feat-img:hover{
+        transform: translateY(-10px);
+       }
+    .abt-img{
+        width: 43%;
+        border-radius: 172px;
+        height: 46vh;
+    }   
+    .product-img{
+        height: 34vh;
+        width: 34vw;
+        border-radius: 12px;
+        transition: all 0.5s;
+    }
+    .product-img:hover{
+        transform: translateY(-11px);
+    }
+
+    @media (max-width: 575.98px) { 
+        .slide-img {
+            height: 20vh;
+            width: 31vw;
+            border-radius: 12px;
+        }
+        span{
+            display: none;
+        }
+
+        .abt-img {
+            width: 83%;
+            border-radius: 172px;
+            height: 43vh;
+        }
+        .feat-img {
+        
+            width: 93vw;
+             
+        }
+        .product-img {
+            
+            width: 100vw;
+             
+        }
+     }
